@@ -2,6 +2,7 @@
 我用来学习GStreamer的程序，内部有多个demo，只依赖GStreamer，可以自己编译并运行、调试和学习。
 
 依赖：GStreamer
+```shell
 sudo apt install \
     libssl1.0.0 \
     libgstreamer1.0-0 \
@@ -12,14 +13,18 @@ sudo apt install \
     gstreamer1.0-libav \
     libgstrtspserver-1.0-0 \
     libjansson4=2.11-1
+```
 
 编译：
+```shell
 mkdir build
 cd build
 cmake ..
 make
+```
 
 运行：
+```shell
 ./demo_1_version_
 ./demo_2_init_
 ./demo_3_element_fac_
@@ -28,6 +33,5 @@ make
 ./demo_6_pads_
 ./demo_8_helloworld_
 ./demo_gstreamer_rtsp_
-
-
+```
 
